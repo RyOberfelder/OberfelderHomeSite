@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProjectLambda</title>
+    <meta name="description" content="website description">
+    <meta name="keywords" content="website keywords, website keywords">
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="http://www.cs.unc.edu/Courses/comp426-f14/jquery-1.11.1.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="logo">
+          <div id="logo_text">
+            <!-- class="logo_colour", allows you to change the colour of the text -->
+            <h1><a href="index.html">Project<span class="logo_colour">Lambda</span></a></h1>
+            <h2>Economic Monitor Site</h2>
+          </div>
+        </div>
+        <div id="menubar">
+          <ul id="menu">
+            <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+            <li class="selected"><a href="index.html">Home</a></li>
+            <li><a href="WhatIDo.html">What I do<br>
+              </a></li>
+            <li><a href="WhatIveDone.html">What I've Done<br>
+              </a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Contact.html">Contact<br>
+              </a></li>
+            <li><a href="LambdaProject.html">Project Lambda</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div id="site_content">
+	  <div id="mySideBar"></div>
+		<script type="text/javascript">
+		$(document).ready(function(e) {
+		$('#mySideBar').load('sidebar.html',function(){alert('loaded')});
+		});
+		</script>
+	  
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1 id="notFunTimes">Project Lambda<br>
+          </h1>
+          <p class="funtimes">Project Lambda, currently in the works, is
+            a website devoted to studying and commenting on the current
+            U.S. economic situation. Most often this will be a
+            Macro-Economic, Top-down, look at how the market is moving.
+            As New sections of the site come available </p>
+        </div>
+      </div>
+      <div id="footer">
+        <p><a href="index.html">Home</a> | <a href="WhatIDo.html">What
+            I Do</a> | <a href="WhatIveDone.html">What I've Done</a> |
+          <a href="FAQ.html">FAQ</a> | <a href="Contact.html">Contact</a></p>
+        <p>Date Last Updated [09/28/2014]</p>
+      </div>
+    </div>
+    <script> $("#notFunTimes").click(function(){ $(".funtimes").hide(); });</script>
+  </body>
+</html>

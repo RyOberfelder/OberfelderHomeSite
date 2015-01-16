@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oberfelder Lambda</title>
+    <meta name="description" content="website description">
+    <meta name="keywords" content="website keywords, website keywords">
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src="http://www.cs.unc.edu/Courses/comp426-f14/jquery-1.11.1.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header"></div>
+	  <!-- change the number in nth-child to reflect which page you're on -->
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+			$('#header').load('MainElements/LambdaProjectHeader.html',function(){$("#header li:nth-child(3)").addClass("selected");});
+			});
+		</script>
+      <div id="site_content">
+        <div class="sidebar"></div>
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+			$('.sidebar').load('MainElements/LambdaProjectSidebar.html',function(){});
+			});
+		</script>
+<div id="content">
+          <div id="ResumeList">
+            <!-- insert the page content here -->
+            <h1>About Me</h1>
+            <a href="style%5CLinkedFiles%5CResumeOberfelderFall2014.pdf">Download
+
+
+
+              Resume Link</a><br>
+            <br>
+            <h2 class="sectionHeader">Education</h2>
+            <ul id="schooling">
+              <li>Bachelor of Science in Computer Science, Degree
+                Expected May </li>
+              <li>Second Major: Economics</li>
+              <li>Minor: Information Systems</li>
+            </ul>
+            <h2 class="sectionHeader">Programing for Majors- Alice Like
+              Program</h2>
+            <span>In creating the program and taking the class, I
+              obtained:</span>
+            <ul id="skillsSection">
+              <li>Modularity</li>
+              <li>Recursive Decent Parsing</li>
+              <li>Design Patterns</li>
+              <li>Threads</li>
+              <li>large scale 'Object Oriented' Programming
+                <ul>
+                  <li>Developed programs contained 90 classes/interfaces</li>
+                </ul>
+              </li>
+            </ul>
+            <h2 class="sectionHeader">Skills</h2>
+            <ul id="skillsSection">
+              <li>Java proficiency</li>
+              <li>Basic C understanding</li>
+              <li>Basic Assembly understanding</li>
+              <li>Basic HTML, CSS, and Java Script proficiency</li>
+              <li>Verses in statistical analysis through Matlab, Jmp,
+                Stata</li>
+              <li>Trained in Intermediate macroeconomic and
+                microeconomic thinking</li>
+              <li>Intermediate Japanese</li>
+              <li>Basic Chinese (Mandarin)</li>
+              <li>Experience and proficiency in communicating complex
+                ideas to students
+                <ul>
+                  <li>Most especially in explaining Computer concepts</li>
+                </ul>
+              </li>
+            </ul>
+            <h2 class="sectionHeader">Classes Developed/Mastered</h2>
+            <ul id="classSkillsSection">
+              <li>Computer Science
+                <ul>
+                  <li>Data Structures</li>
+                  <li>Computer Organization</li>
+                  <li>Web Design</li>
+                </ul>
+              </li>
+              <li>Economics
+                <ul>
+                  <li>Intermediate Macroeconomics</li>
+                  <li>Intermediate Microeconomics</li>
+                  <li>Econometrics</li>
+                  <li>Financial Markets</li>
+                </ul>
+              </li>
+              <li>Information Science
+                <ul>
+                  <li>Systems Analysis</li>
+                </ul>
+              </li>
+            </ul>
+            <h2 class="sectionHeader">Work Experience</h2>
+            <h3 class="jobTitleSection">Organizing for America, Summer
+              2012 Intern</h3>
+            <ul>
+              <li>Organized, and managed voting registration drives and
+                phone banks involving volunteers 14-60+ years old</li>
+              <li>Routinely managed data collection and input</li>
+            </ul>
+            <h3 class="jobTitleSection">UNC ITS Help Desk, Walk-in
+              Technician</h3>
+            <ul>
+              <li>Experience troubleshooting common and uncommon
+                technical issues for a wide range of clientele</li>
+              <li>Experience working with teammates in solving client
+                issues</li>
+            </ul>
+            <h2 class="sectionHeader">Work Experience</h2>
+            <ul>
+              <li>Carolina Microfinance club, UNC-CH, 2013-2014 </li>
+              <li>Computer Science club- C.S. Tudor, UNC-CH, 2014</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+			$('#footer').load('MainElements/LambdaProjectFooter.html',function(){});
+			});
+		</script>
+      </div>
+    </div>
+  </body>
+</html>

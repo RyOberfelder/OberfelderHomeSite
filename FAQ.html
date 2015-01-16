@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oberfelder Lambda</title>
+    <meta name="description" content="website description">
+    <meta name="keywords" content="website keywords, website keywords">
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="http://www.cs.unc.edu/Courses/comp426-f14/jquery-1.11.1.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header"></div>
+      <!-- change the number in nth-child to reflect which page you're on -->
+      <script type="text/javascript">
+			$(document).ready(function(e) {
+			$('#header').load('MainElements/LambdaProjectHeader.html',function(){$("#header li:nth-child(4)").addClass("selected");});
+			});
+		</script>
+      <div id="site_content">
+        <div class="sidebar"></div>
+        <script type="text/javascript">
+			$(document).ready(function(e) {
+			$('.sidebar').load('MainElements/LambdaProjectSidebar.html',function(){});
+			});
+		</script>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>FAQ</h1>
+          <h4>If you had to choose the ten most influential cultural
+            works (books) you had ever read, what would they be?</h4>
+          <br>
+          <ul>
+            <li>The Harry Potter Series</li>
+            <li>Enders Shadow, and by Extention Ender's Game</li>
+            <li>White Noise</li>
+            <li>Dante's Inferno</li>
+            <li>Absalom Absalom</li>
+            <li>Calvin and Hobbes</li>
+            <li>The Happiness Hypothesis</li>
+            <li>To Kill a Mocking Bird</li>
+            <li>Hitch Hikers Guide to The Galaxy</li>
+            <li>Pride and Prejudice</li>
+          </ul>
+          <br>
+        </div>
+      </div>
+      <div id="footer">
+        <script type="text/javascript">
+			$(document).ready(function(e) {
+			$('#footer').load('MainElements/LambdaProjectFooter.html',function(){});
+			});
+		</script> </div>
+    </div>
+  </body>
+</html>
